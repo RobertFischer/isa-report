@@ -1,0 +1,31 @@
+{
+  "name": "isa-report",
+  "version": "1.0.0",
+  "description": "Independent Security Account report -- a way to actually see the time value of money",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobertFischer/isa-report.git"
+  },
+  "keywords": [
+    "social",
+    "security",
+    "privatization",
+    "politics",
+    "social",
+    "security",
+    "time",
+    "value",
+    "money",
+    "interest"
+  ],
+  "author": "Robert Fischer",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/RobertFischer/isa-report/issues"
+  },
+  "homepage": "https://github.com/RobertFischer/isa-report#readme"
+}
