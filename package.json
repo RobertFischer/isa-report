@@ -2,9 +2,11 @@
   "name": "isa-report",
   "version": "1.0.0",
   "description": "Independent Security Account report -- a way to actually see the time value of money",
-  "main": "./dist/index.js",
+  "main": "./docs/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "coverage": "browserslist --coverage=US --config=./package.json",
+    "webpack": "webpack",
+    "webpack.config.js": "npm run webpack"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,37 @@
   },
   "homepage": "https://github.com/RobertFischer/isa-report#readme",
   "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-node-env-inline": "^0.2.0",
+    "babel-plugin-transform-strict-mode": "^6.24.1",
+    "babel-plugin-transform-undefined-to-void": "^6.8.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-bluebird": "^1.0.1",
+    "babel-preset-env": "^1.6.1",
+    "bootstrap": "^4.0.0-beta.2",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "font-awesome": "^4.7.0",
+    "html-webpack-plugin": "^2.30.1",
+    "jquery": "^3.2.1",
+    "node-sass": "^4.5.3",
+    "optimize-js-plugin": "0.0.4",
+    "popper.js": "^1.12.6",
+    "postcss-font-magician": "^2.1.0",
+    "postcss-loader": "^2.0.8",
+    "resolve-url-loader": "^2.2.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "url-loader": "^0.6.2",
     "webpack": "^3.8.1"
+  },
+  "browserslist": [
+    "> 1% in US",
+    "last 5 versions",
+    "Firefox ESR"
+  ],
+  "devDependencies": {
+    "browserslist": "^2.7.0"
   }
 }
