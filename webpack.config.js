@@ -111,8 +111,6 @@ module.exports = {
   },
   entry: {
     bootstrap : [
-      path.resolve(__dirname, "vendor", "jquery.js"),
-      path.resolve(__dirname, "vendor", "popper.js"),
       "bootstrap",
     ],
     compatibility: [
@@ -183,6 +181,18 @@ module.exports = {
     ],
   },
   plugins: _.compact([
+    new webpack.optimize.ModuleConcatenationPlugin(),
+    new webpack.ProvidePlugin ({
+      'window.jQuery': 'jquery',
+      'window.$': 'jquery',
+      'window._': 'lodash',
+      'window.Popper': 'popper.js',
+      'Popper': 'popper.js',
+      $: 'jquery',
+      jQuery: 'jquery',
+      _: 'lodash',
+      Promise: 'bluebird',
+    }),
     new ExtractTextPlugin({
       filename: "style." + (IS_DEV ? "dev" : "[sha256:contenthash:base62]") + ".css",
       allChunks: true,

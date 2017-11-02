@@ -1,0 +1,13 @@
+#!/bin/bash -exu
+
+cd "$(dirname $0)/.."
+
+WEBPACK_PID=""
+function killWebpack {
+  kill "$WEBPACK_PID"
+}
+"$(npm bin)/webpack" --watch --progress --color &
+WEBPACK_PID="$!"
+trap killWebpack EXIT
+
+"$(npm bin)/http-server" ./docs -o -C-1
