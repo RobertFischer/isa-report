@@ -5,3 +5,4 @@ repl-temp-*
 .*.swp
 node_modules
 dist
+package-lock.json

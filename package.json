@@ -27,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/RobertFischer/isa-report/issues"
   },
-  "homepage": "https://github.com/RobertFischer/isa-report#readme"
+  "homepage": "https://github.com/RobertFischer/isa-report#readme",
+  "dependencies": {
+    "webpack": "^3.8.1"
+  }
 }
