@@ -4,3 +4,19 @@
 html, body {
 	min-height: 100vh;
 }
+
+body {
+	@extend .container;
+}
+
+h1 {
+}
+
+iframe, blockquote, footer {
+	@extend .mx-auto;
+}
+
+footer {
+	@extend .mx-auto;
+	@extend .text-center;
+}

@@ -10,4 +10,5 @@ function killWebpack {
 WEBPACK_PID="$!"
 trap killWebpack EXIT
 
-"$(npm bin)/http-server" ./docs -o -C-1
+"$(npm bin)/webpack" --progress --color 
+"$(npm bin)/http-server" ./docs -o  -C0

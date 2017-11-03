@@ -1,0 +1,4 @@
+#!/bin/bash -exu
+
+npm run clean
+npm run webpack

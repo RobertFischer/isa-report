@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Fakes elm-make into printing colors when
+# run by elm-webpack-loader
+unbuffer "`dirname $0`/../node_modules/.bin/elm-make" "$@"
+

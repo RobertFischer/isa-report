@@ -103,8 +103,8 @@ module.exports = {
   watchOptions: {
     ignored: [
       /node_modules\//,
+      /elm-stuff\//,
       /\.git\//,
-      /dist\//,
       /scripts\//,
       /docs\//
     ]
@@ -117,7 +117,10 @@ module.exports = {
       'babel-polyfill',
     ],
     app: [
-      path.resolve(__dirname, "index.js"),
+      path.resolve(__dirname, "year-selector.js"),
+      path.resolve(__dirname, "range-display.js"),
+      path.resolve(__dirname, "contribution-chart.js"),
+      path.resolve(__dirname, "retirement-chart.js"),
     ],
     style: [
       path.resolve(__dirname, "index.scss"),
@@ -134,6 +137,10 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.(c|t)sv$/i,
+        use: [ 'csv-loader' ],
+      },
       {
         test: /\.json5?$/i,
         use: [ 'json5-loader' ],
@@ -207,6 +214,7 @@ module.exports = {
       sourceMap: true,
       uglifyOptions: {
         compress: !IS_DEV,
+        mangle: !IS_DEV,
         output: {
           comments: IS_DEV,
           beautify: IS_DEV,
@@ -221,7 +229,7 @@ module.exports = {
       inject: 'head',
       minify: notDev({}),
       filename: "index.html",
-      template: "index.html",
+      template: path.resolve(__dirname, "index.html"),
       chunkSortMode: "dependency"
     }),
     new webpack.optimize.CommonsChunkPlugin({

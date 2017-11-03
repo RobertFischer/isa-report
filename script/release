@@ -1,0 +1,8 @@
+#!/bin/bash -exu
+
+cd "`dirname $0`/.."
+git rm -r -f ./docs/* || rm -r ./docs/*
+NODE_ENV=production npm run webpack
+git add ./docs
+git commit -m "Release" ./docs
+git push
