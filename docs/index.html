@@ -9,7 +9,7 @@
       google.charts.load('current', {'packages':['corechart']});
     </script>
     <title>How About Actual Social Security for a Change?</title>
-  <link href="style.Od2LamQenzLXoJ1CNmuQqtRHYXbkp5z0lB0wKPiaMnh.css" rel="stylesheet"><script type="text/javascript" src="compatibility.b4b9645a3f2c7a94eff5.js"></script><script type="text/javascript" src="app.d4931868e6c5e9fa8472.js"></script><script type="text/javascript" src="bootstrap.97122c49be1432fb493d.js"></script><script type="text/javascript" src="style.bde417426d2fd5d55d00.js"></script></head>
+  <link href="style.Od2LamQenzLXoJ1CNmuQqtRHYXbkp5z0lB0wKPiaMnh.css" rel="stylesheet"><script type="text/javascript" src="compatibility.b4b9645a3f2c7a94eff5.js"></script><script type="text/javascript" src="app.932339944ddeaec9e287.js"></script><script type="text/javascript" src="bootstrap.97122c49be1432fb493d.js"></script><script type="text/javascript" src="style.bde417426d2fd5d55d00.js"></script></head>
   <body>
     <h1 id="paying-attention">This All Started When I Was Barely Paying Attention</h1>
 
@@ -82,7 +82,7 @@
           </p>
           <p>
             <label for="starting-income">Starting Income (Annual):</label>
-            <input type="range" id="starting-income" name="starting-income" min="5000" max="100000" step="5000" list="income-options" range-display="show-starting-income">
+            <input type="range" id="starting-income" name="starting-income" min="5000" value="40000" max="300000" step="5000" list="income-options" range-display="show-starting-income">
             <code>$<span id="show-starting-income"></span></code>
           </p>
           <p>
@@ -153,16 +153,19 @@
     There's a lot of complexity in calculating exactly what your benefits are, having to do with the amount
     of your income, your years working, your family situation, and your retirement age. However, there is one
     simple constant that cuts through all of this: the maximum benefit. <strong>You will not receive more than
-    $2,155/mo from Social Security retirement. Period. Full stop.</strong> So if you are banking on Social
-    Security, you are maxing out your retirement lifestyle at $25k/year. (Oh, and did I mention it's taxable as
-    income?)
+    $2,500/mo from Social Security retirement. Period. Full stop.</strong> So if you are banking on Social
+    Security, you are maxing out your retirement lifestyle at $30k/year, and you are only going to get that if
+    you made $128k or more for a decades or so.
+    (Oh, and did I mention the money you get back is taxable as income?)
     </p>
 
     <p>At this point, let's take a look at our chart again. Let's extrapolate out using average returns on
     investments and our pattern of raises, and see what kind of retirement that implies for us. We'll figure
-    that we work for 40 years and drop all our social security contributions into high-yield bonds. Then
-    we will retire for 60 years without making another penny.
-    During retirement, we'll take half our interest and cash it out, and we'll save the other half, and
+    that we work for 40 years and drop all our social security contributions into 12% Rule investments. Then
+    we will retire for 60 years without making another penny. Since we don't want a stock exchange collapse or
+    a recession to ruin our retirmeent, we'll move all our investments into Treasury Bills (T-Bills): it's safer
+    than storing the cash under our bed, but with only a slightly better return on investment.
+    During our retirement, we'll take half our interest and cash it out, and we'll save the other half, and
     we'll withdraw our principal evenly. This is all extremely conservative. How does
     that compare to Social Security's maximum payout?</p>
 
@@ -178,7 +181,7 @@
           </p>
           <p>
             <label for="starting-income">Starting Income (Annual):</label>
-            <input type="range" id="rc-starting-income" name="starting-income" min="5000" max="100000" step="5000" list="income-options" range-display="rc-show-starting-income">
+            <input type="range" id="rc-starting-income" name="starting-income" min="5000" max="300000" value="40000" step="5000" list="income-options" range-display="rc-show-starting-income">
             <code>$<span id="rc-show-starting-income"></span></code>
           </p>
           <p>
