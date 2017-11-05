@@ -5,9 +5,12 @@ $(() => $('input[type=range][range-display]:not([range-display=""])').each(funct
     const val = $this.val();
     $display.text(val);
 
-    const label = $(`datalist#${$this.attr("list")} option[value=${val}]`).attr("label");
-    if(label) {
-      $display.text(val + " (" + label + ")");
+    const listName = $this.attr("list");
+    if(listName) {
+      const label = $(`datalist#${listName} option[value=${val}]`).attr("label");
+      if(label) {
+        $display.text(val + " (" + label + ")");
+      }
     }
   };
   doUpdate();

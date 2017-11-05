@@ -34,16 +34,16 @@ const calculateData = () => {
     income = raiseFunc(income, startYear, year);
     const contribution = income * 0.062;
     contributions += contribution;
-    accountBalance = contribution + accountBalance * (1 + 7.98/100);
+    accountBalance = contribution + accountBalance * (1 + 12/100);
 
     const rowData = [year, income, contributions, null, null, null];
     data.addRow(rowData);
   });
 
-  const ssAnnual = 2155 * 12;
+  const ssAnnual = 2150 * 12;
   _.range(retirementYear, terminalYear).forEach(year => {
     const retirementStipend = accountBalance / (terminalYear - year + 1);
-    const interestEarned = accountBalance * 7.98/100;
+    const interestEarned = accountBalance * t30Rate[year] / 100.0;
     const cashedOutInterest = interestEarned / 2.0;
     income = retirementStipend + cashedOutInterest;
     accountBalance -= retirementStipend

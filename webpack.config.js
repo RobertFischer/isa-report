@@ -121,6 +121,7 @@ module.exports = {
       path.resolve(__dirname, "range-display.js"),
       path.resolve(__dirname, "contribution-chart.js"),
       path.resolve(__dirname, "retirement-chart.js"),
+      path.resolve(__dirname, "behindhand-son-chart.js"),
     ],
     style: [
       path.resolve(__dirname, "index.scss"),

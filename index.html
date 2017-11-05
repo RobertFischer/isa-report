@@ -87,7 +87,8 @@
               id="starting-income"
               name="starting-income"
               min="5000"
-              max="100000"
+              value="40000"
+              max="300000"
               step="5000"
               list="income-options"
               range-display="show-starting-income"
@@ -162,16 +163,19 @@
     There's a lot of complexity in calculating exactly what your benefits are, having to do with the amount
     of your income, your years working, your family situation, and your retirement age. However, there is one
     simple constant that cuts through all of this: the maximum benefit. <strong>You will not receive more than
-    $2,155/mo from Social Security retirement. Period. Full stop.</strong> So if you are banking on Social
-    Security, you are maxing out your retirement lifestyle at $25k/year. (Oh, and did I mention it's taxable as
+    $2,150/mo from Social Security retirement. Period. Full stop.</strong> So if you are banking on Social
+    Security, you are maxing out your retirement lifestyle at $25k/year, and you are only going to get that if
+    you made $128k or more for a decade or so.  (Oh, and did I mention the money you get back is taxable as
     income?)
     </p>
 
     <p>At this point, let's take a look at our chart again. Let's extrapolate out using average returns on
     investments and our pattern of raises, and see what kind of retirement that implies for us. We'll figure
-    that we work for 40 years and drop all our social security contributions into high-yield bonds. Then
-    we will retire for 60 years without making another penny.
-    During retirement, we'll take half our interest and cash it out, and we'll save the other half, and
+    that we work for 40 years and drop all our social security contributions into 12% Rule investments. Then
+    we will retire for 60 years without making another penny. Since we don't want a stock exchange collapse or
+    a recession to ruin our retirmeent, we'll move all our investments into Treasury Bills (T-Bills): T-Bills
+    are both safer and have a slightly better return on investment than storing the cash under our bed.
+    During our retirement, we'll take half our interest and cash it out, and we'll save the other half, and
     we'll withdraw our principal evenly. This is all extremely conservative. How does
     that compare to Social Security's maximum payout?</p>
 
@@ -192,7 +196,8 @@
               id="rc-starting-income"
               name="starting-income"
               min="5000"
-              max="100000"
+              max="300000"
+              value="40000"
               step="5000"
               list="income-options"
               range-display="rc-show-starting-income"
@@ -210,10 +215,10 @@
                 <option value="fix10" label="Fixed 10%"></option>
               </optgroup>
               <optgroup label="Experience-Based">
-                <option value="exp2" label="Years/2"></option>
-                <option value="exp3" label="Years/3"></option>
-                <option value="exp5" label="Years/5"></option>
-                <option value="exp10" label="Years/10"></option>
+                <option value="exp2" label="(Years/2)%"></option>
+                <option value="exp3" label="(Years/3)%"></option>
+                <option value="exp5" label="(Years/5)%"></option>
+                <option value="exp10" label="(Years/10)%"></option>
               </optgroup>
               <optgroup label="Following Economy">
                 <option value="gdpc" label="GDP per Capita"></option>
@@ -230,7 +235,196 @@
     the bank, earning nontrivial amounts of interest. This is an account that you can leave
     to your children. It's intergenerational wealth, which is a stark contrast to the way
     social security works: if you die after 62 or with adult children, the contributions
-    just vanish. There's no more value to you or your children. It's just a tax.</p>
+    just vanish. There's no more value to you or your children. It's just a tax you paid
+    and now the money's gone.</p>
+
+    <p class="lead">All of this makes a pretty compelling case that, at least when it comes to ensuring
+    a comfortable retirement for our citizens, the existing Social Security system should be
+    replaced with an investment account.  It's just hard to argue with the numbers
+    and the power of compound interest.</p>
+
+
+    <h1 id="is-that-the-point">What's The Point?</h1>
+
+    <p>Okay, so our existing Social Security structure is a really bad investment
+    vehicle, and we (and our children) would be much better off if we took that
+    money and invested it responsibly ourselves. "But," Clever
+    Interlocutor says, "That's not the point! It's effectively a socialized insurance
+    policy for death and disability, along with old age. When one of those things happens,
+    Social Security ensures that you aren't entirely destitute." This is a totally fair
+    point, Clever Interlocutor. Thanks for bringing it up.</p>
+
+    <p class="lead">I would be a poor Christian indeed if I wanted to
+    take away support from widows and orphans. But this is where you need to know an
+    important truth, which every employer is acutely aware of but which many employees
+    don't know: the <abbr class="initialism">FICA</abbr> payments you see coming out of
+    your paycheck are literally only half the story. The government also taxes your
+    employer at 6.2% of your income. This is beyond the 6.2% they already required your
+    employer to take out of your paycheck, for a total of 12.4%.</p>
+
+    <p>So this means that there's a second pool of time-value: the first is the time-value
+    of your contributions, amounting to 6.2% of your income; the second is a matching pool
+    with just as much value contributed by your employer. This means that literally every
+    worker could have a matching non-worker who they supported. That person could have an
+    identical retirement even though they never worked a day in their life. It would be
+    entirely possible for Social Security to just pair people up at birth, one from a low
+    socioeconomic setting and one from a high socioeconomic setting, and then have the
+    two of them have the exact same benefits throughout their life. It'd be like
+    <em>The Prince and the Pauper, Retirement Edition</em>. Although that is an interesting
+    concept for a story, it's a pretty ham-fisted way to go about things. For the moment,
+    it suffices to note that there is a pool of money available to address these issues
+    which is equal in value to the pool of money that people have generated for their own
+    retirement.</p>
+
+    <h2 id="do-not-get-greedy">Don't Get Greedy</h2>
+
+    <p>"I will let that slide for the moment," Clever Interlocutor interjects, "But caring
+    for others is only part of the issue. People routinely lose their financial security when
+    economic crashes happen, such as the Enron implosion or the Great Recession in the 2000s.
+    Even when we are talking about the individual, Social Security provides a kind of guarantee
+    of a baseline income in retirement, which stock investment portfolios simply cannot do."</p>
+
+    <p>Again, you're right, Clever Interlocutor. So there are some important caveats that we need
+    to note. A total stock market collapse would indeed
+    wipe out a lot of financial products, including high-yield bond and stock investments. There
+    are a whole world of even riskier investments that people are often sold, and there is the
+    unfortunate fact that investors&mdash;especially amateurs who consider themselves
+    well-informed&mdash;tend to think they are leading trends when really they are following them,
+    which is a very risky and expensive behavior for an investor.
+    (The excellent book, <em>Nudge</em>, covers this is detail.)</p>
+
+    <p class="lead">The purpose of Social Security is not to make you rich in retirement or build
+    intergenerational
+    wealth. (Although it's awesome if it can do that, too.) The purpose of Social Security is to
+    ensure that you are capable of retiring, and to do so without becoming destitute. So any kind of
+    Social Security account would need to have a lot more constraints on it than a voluntary retirement
+    account. We saw this in our scenario in the conservative behavior: withdrawing only a small amount
+    of our principal at a time, reinvesting half our interest, and putting our money into T-Bills.
+    Without those kind of regulations being in place, an individual account is not serving one of the
+    key purposes that Social Security is there to serve.</p>
+
+    <h3 id="behindhand-son">The Behindhand Son</h3>
+
+    <p>In case the graphs above have not made the power of compound interest really obvious,
+    let me tell you the Parable of the Behindhand Son. There was a family that had two twin children,
+    a daughter and a son. The daughter scrimped and saved early on in her life and put away $15,000
+    in 12% Rule investments. She then went to work with impoverished and homeless
+    communities, which meant she didn't have any more money to save up. Her brother, on the other
+    hand, began contributing to his retirement only after his sister did. He also didn't "go nuts"
+    like she did, instead contributing $1000 a year for the next 39 years. He copied is sister's
+    investments identically. When it came time to retire, he had contributed $39,000 and had
+    almost $700,000 to retire on. Not too shabby! But she had only contributed $15,000&mdash;that's
+    less than half of what he had contributed&mdash;yet retired with more than twice the cash her
+    brother did. One year makes that much difference when compound interest is in play.</p>
+
+    <form id="behindhand-son-form">
+      <fieldset>
+        <legend>Behindhand Son Calculator</legend>
+        <p>
+          <label for="daughter-contribution">Daughter's Contribution (One-Time):</label>
+          <input
+            type="range"
+            id="daughter-contribution"
+            name="daughter-contribution"
+            min="10000"
+            value="15000"
+            max="50000"
+            step="5000"
+            range-display="show-daughter-contribution"
+          />
+          <code>$<span id="show-daughter-contribution"></span></code>
+        </p>
+        <p>
+          <label for="son-contribution">Son's Contribution (Annual):</label>
+          <input
+            type="range"
+            id="son-contribution"
+            name="son-contribution"
+            min="1000"
+            value="1000"
+            max="30000"
+            step="1000"
+            range-display="show-son-contribution"
+          />
+          <code>$<span id="show-son-contribution"></span></code>
+        </p>
+        <p>
+          <label for="son-delay">Son's Delay in Investment (Years):</label>
+          <input
+            type="range"
+            id="son-delay"
+            name="son-delay"
+            min="0"
+            value="1"
+            max="39"
+            step="1"
+            range-display="show-son-delay"
+          />
+          <code><span id="show-son-delay"></span> Years</code>
+        </p>
+        <p>
+          <label for="behindhand-son-growth-rate">Growth Rate:</label>
+          <input
+            type="range"
+            id="behindhand-son-growth-rate"
+            name="behindhand-son-growth-rate"
+            min="0.1"
+            value="12"
+            max="12"
+            step="0.1"
+            range-display="show-behindhand-son-growth-rate"
+          />
+          <code><span id="show-behindhand-son-growth-rate"></span>%</code>
+        </p>
+
+      </fieldset>
+    </form>
+
+    <div id="behindhand-son-canvas" style="width: 100%, height: 50vh;"></div>
+
+    <p>This power of compound interest is the secret to the account-based Social Security alternative.
+    It's why this approach will stay effectively solvent while the existing Social Security system is
+    failing. This power, however, needs to be protected. There's going to be a tendency for people to
+    want to get at their money. That's a reasonable desire, and I get it.  Yet for an account-based
+    Social Security alternative to work, the
+    first key regulation must protect the time-value of worker's contributions by preventing
+    account-holders from withdrawing money
+    too soon. They need to be like the daughter, not like the son, becuase the contributions alone
+    aren't enough to provide for retirement. This isn't a hypothetical fact, this is a demonstrated
+    fact: sacrificing the time-value of money is exactly the reason
+    the current Social Security system has failed.</p>
+
+    <p>The current Social Security system is based on the
+    current workers paying taxes which directly pay for the benefits to retirees, based on the promise
+    that when the current workers retire, the new breed of current worker will support them. But this
+    system only works if the workforce and its income keeps growing faster than the people dependent
+    upon it. The problems with this approach are identical to a
+    <a href="http://www.investopedia.com/terms/p/ponzischeme.asp">Ponzi Scheme</a>, which is not an
+    accident. An account-based Social Security alternative avoids the existing Ponzi scheme problems,
+    but it can only work if workers are forced to leave their money in the accounts. Otherwise, the
+    power of compound interest is lost, we are dependent on the contributions alone, and that's just
+    not going to work.</p>
+
+    <h3 id="do-not-get-greedy">Don't Get Greedy</h3>
+
+    <p class="lead">The second key regulation must ensure that a global economic crash does not leave
+    everyone destitute.  Good mutual funds already understand how to protect against this, and they do
+    so by using government bonds and other low-risk bonds as a hedge against market downturns. We used
+    this approach in an extreme way in our retirement calculator when we shifted all our investments into
+    Treasury Bills at retirement: a Treasury Bill (aka: T-Bill) is basically a contract with the
+    government where you give them money for a certain number of years, and they give you a percentage
+    return on that interest. A T-Bill is as secure as the US dollar, except that the T-Bill will
+    pay you interest.</p>
+
+    <p>It would take the effective collapse of the US government for T-Bills to lose
+    their value, so they are the ultimate insurance policy for US investors. They are also the lowest
+    possible risk investment, and therefore the lowest possible return investment. So although you do
+    make some money on your T-Bills, you are missing out on the opportunity of making a lot more.
+    But if the purpose of Social Security is to ensure that people are able to retire and not be
+    destitute, then T-Bills are exactly a product we can use to get there, and the accounts should
+    be required to carry an appropriate amount of T-Bills as investments to mitigate risk, even if
+    that limits our returns. That's the cost of security.</p>
+
 
     <div id="datalists" hidden>
       <datalist id="income-options">
