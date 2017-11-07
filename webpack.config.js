@@ -126,6 +126,10 @@ module.exports = {
       path.resolve(__dirname, "value-hit-chart.js"),
       path.resolve(__dirname, "insured-hit-chart.js"),
       path.resolve(__dirname, "horrid-hit-chart.js"),
+      path.resolve(__dirname, "income-percentiles-chart.js"),
+      path.resolve(__dirname, "contribution-percentiles-chart.js"),
+      path.resolve(__dirname, "contribution-quintiles-chart.js"),
+      path.resolve(__dirname, "sharedown-chart.js"),
     ],
     style: [
       path.resolve(__dirname, "index.scss"),

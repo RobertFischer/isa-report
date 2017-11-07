@@ -409,7 +409,7 @@
 
 		<h3 id="role-of-risk">The Role of Risk</h3>
 
-		<p>So far, I've been assuming a lot about return on investments for the sake of simplicity. But
+		<p class="lead">So far, I've been assuming a lot about return on investments for the sake of simplicity. But
 		there is a nasty devil in the details, and it has to do with risk. It's an assumed truth that
 		the stock market will always go up given a long enough period of time, and
 		<a href="https://www.cnbc.com/2017/06/27/what-warren-buffett-learned-from-buying-his-first-stock-at-age-11.html">that
@@ -464,7 +464,7 @@
 		be required to carry an appropriate amount of T-Bills as investments to mitigate risk, even if
 		that limits our returns. That's the cost of security.</p>
 
-		<p>The conventional wisdom is that you should have some multiple of your age in bonds, with that
+		<p class="lead">The conventional wisdom is that you should have some multiple of your age in bonds, with that
 		multiple being somewhere between 0.5 and 2.5. The higher that multiple, the more you carry in bonds,
 		and the less overall return you would expect to see in the long run. However, the higher that
 		multiple, the more you carry in bonds, and the less you will expect to lose in short-term market
@@ -491,7 +491,7 @@
 
 		<div id="insured-hit-canvas" style="width: 100%; height: 50vh;"></div>
 
-		<p>Well, I'll be a monkey's uncle. It never works to your advantage to carry insurance with a mere
+		<p class="lead">Well, I'll be a monkey's uncle. It never works to your advantage to carry insurance with a mere
 		55% market downturn (ie: the Great Recession). But we know that it can get worse than that. So let's take
 		a look at the worst downturn in US history: the crash of 1929. This is the Big Baddy, the one that started
 		the Great Depression. It was a 82% downturn
@@ -513,24 +513,84 @@
 		</form>
 		<div id="horrid-hit-canvas" style="width: 100%; height: 50vh;" ></div>
 
-		<p>Wow. Even in this worst-case-in-history example, people hit early on in their investment
-		careers are better off without the insurance that bonds provide. The bonds outright hurt
-		you until you are well over halfway through your investment career, and they don't
-		really help you until you get to the last 5 to 10 years. Even then, the help isn't very
-		significant: it protects about 20% of your principal in the case of a second Great
-		Depression hitting. As we saw above, anything less was pure downside with no upside.</p>
+		<p class="lead">Wow. Even in this worst-case-in-history example, people hit early on in their investment
+		careers are better off without the insurance that bonds provide. In fact, the bond insurance
+		hurts you more than it helps until are well over halfway through your investment career, and
+		that help isn't significant at all until you get to the last 5 to 10 years. Even then, the
+		help is not very significant: it protects about 20% of your principal in the case of a second
+		Great Depression hitting. As we saw above, anything less was pure downside with no upside.</p>
 
 		<p>Now, these models aren't realistic: they treat the hit as a one-time thing, and
 		immediately resume 12% Rule levels of returns. Truly severe economic downturns take
 		years to recover and don't have those levels of return in the meantime. However, they
 		make the point that the damage done by low returns is worse than the damage done by
-		economic downturns, assuming you have time to wait out the downturn.</p>
+		economic downturns, assuming you have time to wait for the recovery and are playing the market
+		as a whole.</p>
 
-		<p>It's also important to remember that some people have zero time to wait: those who
+		<p>Before we get too excited about dumping our bonds, there are three important
+		caveats that we need to remember.</p>
+
+		<p>It's important to remember that some people have zero time to wait: those who
 		are in retirement cannot afford a 55% or 82% loss on their principal, because they
 		are living off of it. So T-Bills are the perfect investment vehicle for those folks,
 		because preservation of principal&mdash;that is, not losing any money&mdash;is the
 		most important thing.</p>
+
+		<p>Second, it's important to remember that the guaranteed recovery comes from playing the
+		market as a whole, not individual stocks or even sectors. It's entirely possible to lose
+		everything in stocks, such as with folks working at Enron who invested in company stock.
+		</p>
+
+		<p>Finally, it's important to remember that Social Security is not primarily an investment
+		vehicle. Social Security is a social safety net: it's the last resort to ensure that we
+		do not have people left destitute because they cannot work due to age or disability, or
+		because their spouse or parent died. So although an overall insurance policy may not make
+		sense, we also cannot allow a market collapse to leave folks destitute. There must be a
+		financial foundation and lifestyle floor provided by Social Security.</p>
+
+		<h2 id="the-rest-of-the-money">But What About the Rest of the Money?</h2>
+
+		<p>I mentioned above that there's a matching 6.2% Social Security tax required from employers,
+		and that this creates a pool of money which can be used to supplement others. Just how much
+		are we talking, though, and how much of a difference can that make?</p>
+
+		<p>Let's start by looking at the breakdown of income by percentile, so we can get a sense of
+		just how much we're talking when we talk about the available income.</p>
+
+		<div id="income-percentiles-canvas" style="width: 100%; height: 50vh;" ></div>
+
+		<p>Okay, so there's our hockey stick of earnings. But how does that translate into the amount of money
+		available? That's a simple matter of math, so here's the graph.</p>
+
+		<div id="contribution-percentiles-canvas" style="width: 100%; height: 50vh;" ></div>
+
+		<p>It's amazing how big numbers multiply and get even bigger really fast. There are
+		<code>167,736,100</code> working Americans. That means there are <code>167,736</code> working
+		Americans per percentile. If their employers pay in <code>6.2%</code> of their income, that's
+		a lot. It's <code>$31,282,111,706</code> in 2016 for the top percentile alone. That's
+		<code>$96</code> for every adult American.</p>
+
+		<p>BTW, if you're curious about proportions of contributions, here those are by quintile.</p>
+
+		<div id="contribution-quintiles-canvas" style="width: 100%; height: 50vh;" ></div>
+
+		<p>So, my thinking is that everyone should help everyone below them. Let's take that money
+		from the employers match and split it among the accounts of everyone in their percentile
+		or less.  If we do that, here's what the breakdown benefits looks like.</p>
+
+		<div id="sharedown-canvas" style="width: 100%; height: 50vh;" ></div>
+
+		<p>Gah! If you supplement the income of everyone who is employed, you have some actual  </p>
+
+		<h2 id="putting-it-together">Putting It Together</h2>
+
+		<p>After digging through all this, here is what seems to make sense to me.</p>
+
+		<ul>
+			<li>We replace social security contributions.</li>
+		</ul>
+
+		<h2 id="this-is-your-life">This is Your Life</h2>
 
 		<div id="datalists" hidden>
 			<datalist id="hit-year">
