@@ -1,7 +1,7 @@
 #!/bin/bash -exu
 
 cd "`dirname $0`/.."
-git rm -r -f ./docs/* || rm -r ./docs/*
+rm -r ./docs/* || true 
 NODE_ENV=production npm run webpack
 git add ./docs
 git commit -m "Release" ./docs
