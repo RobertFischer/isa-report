@@ -119,9 +119,13 @@ module.exports = {
     app: [
       path.resolve(__dirname, "year-selector.js"),
       path.resolve(__dirname, "range-display.js"),
+      path.resolve(__dirname, "hit-year.js"),
       path.resolve(__dirname, "contribution-chart.js"),
       path.resolve(__dirname, "retirement-chart.js"),
       path.resolve(__dirname, "behindhand-son-chart.js"),
+      path.resolve(__dirname, "value-hit-chart.js"),
+      path.resolve(__dirname, "insured-hit-chart.js"),
+      path.resolve(__dirname, "horrid-hit-chart.js"),
     ],
     style: [
       path.resolve(__dirname, "index.scss"),

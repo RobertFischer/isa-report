@@ -11,4 +11,4 @@ WEBPACK_PID="$!"
 trap killWebpack EXIT
 
 "$(npm bin)/webpack" --progress --color 
-"$(npm bin)/http-server" ./docs -o  -C0
+"$(npm bin)/http-server" ./docs -o  -c-1

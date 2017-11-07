@@ -5,10 +5,11 @@ const csvToObj = ([rawYears,rawValues]) => {
   const values = _.map(rawValues, _.toNumber);
   const obj = _.zipObject(years, values);
   const maxYear = _.max(years);
+  const minYear = _.min(years);
   const meanVal = _.mean(values);
-  _.range(maxYear, maxYear+100).forEach(year => {
-    obj[year] = meanVal;
-  });
+  _.range(minYear, maxYear+100).forEach(year =>
+    obj[year] = obj[year] || meanVal
+  );
   return obj;
 }
 
