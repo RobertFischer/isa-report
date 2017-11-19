@@ -2,14 +2,14 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- Bootstrap sez -->
-		<script async defer src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"> <!-- Bootstrap sez -->
+		<script async defer="defer" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 		<script type="text/javascript">
 			google.charts.load('current', {'packages':['corechart']});
 		</script>
 		<title>How About Actual Social Security for a Change?</title>
-	<link href="style.dev.css" rel="stylesheet"><script type="text/javascript" src="compatibility.dev.js"></script><script type="text/javascript" src="app.dev.js"></script><script type="text/javascript" src="bootstrap.dev.js"></script><script type="text/javascript" src="style.dev.js"></script></head>
+	<link href="style.Od2LamQenzLXoJ1CNmuQqtRHYXbkp5z0lB0wKPiaMnh.css" rel="stylesheet"><script type="text/javascript" src="compatibility.13abd7e819b3a5dc65ee.js"></script><script type="text/javascript" src="app.abdfb4deafccee2bf158.js"></script><script type="text/javascript" src="bootstrap.b57d179e79c8a716fe17.js"></script><script type="text/javascript" src="style.9eb37c2bd2cfb02eab45.js"></script></head>
 	<body>
 		<h1 id="paying-attention">This All Started When I Was Barely Paying Attention</h1>
 
@@ -82,17 +82,7 @@
 					</p>
 					<p>
 						<label for="starting-income">Starting Income (Annual):</label>
-						<input
-							type="range"
-							id="starting-income"
-							name="starting-income"
-							min="5000"
-							value="40000"
-							max="300000"
-							step="5000"
-							list="income-options"
-							range-display="show-starting-income"
-						/>
+						<input type="range" id="starting-income" name="starting-income" min="5000" value="40000" max="300000" step="5000" list="income-options" range-display="show-starting-income">
 						<code>$<span id="show-starting-income"></span></code>
 					</p>
 					<p>
@@ -116,11 +106,11 @@
 								<option value="inf" label="Inflation"></option>
 							</optgroup>
 						</select>
-						</select>
+						
 					</p>
 				</fieldset>
 		</form>
-		<div id="contribution-chart-canvas" style="width: 100%; height: 50vh;"></div>
+		<div id="contribution-chart-canvas" style="width: 100%; height: 50vh"></div>
 
 
 		<footer>
@@ -191,17 +181,7 @@
 					</p>
 					<p>
 						<label for="starting-income">Starting Income (Annual):</label>
-						<input
-							type="range"
-							id="rc-starting-income"
-							name="starting-income"
-							min="5000"
-							max="300000"
-							value="40000"
-							step="5000"
-							list="income-options"
-							range-display="rc-show-starting-income"
-						/>
+						<input type="range" id="rc-starting-income" name="starting-income" min="5000" max="300000" value="40000" step="5000" list="income-options" range-display="rc-show-starting-income">
 						<code>$<span id="rc-show-starting-income"></span></code>
 					</p>
 					<p>
@@ -228,7 +208,7 @@
 					</p>
 				</fieldset>
 		</form>
-		<div id="retirement-chart-canvas" style="width: 100%; height: 50vh;"></div>
+		<div id="retirement-chart-canvas" style="width: 100%; height: 50vh"></div>
 
 		<p>Behold the power of compound interest! You will probably end up dying with money in
 		the bank, earning nontrivial amounts of interest. This is an account that you can leave
@@ -321,65 +301,29 @@
 				<legend>Prodigious Daughter Calculator</legend>
 				<p>
 					<label for="daughter-contribution">Daughter's Contribution (One-Time):</label>
-					<input
-						type="range"
-						id="daughter-contribution"
-						name="daughter-contribution"
-						min="10000"
-						value="15000"
-						max="50000"
-						step="5000"
-						range-display="show-daughter-contribution"
-					/>
+					<input type="range" id="daughter-contribution" name="daughter-contribution" min="10000" value="15000" max="50000" step="5000" range-display="show-daughter-contribution">
 					<code>$<span id="show-daughter-contribution"></span></code>
 				</p>
 				<p>
 					<label for="son-contribution">Son's Contribution (Annual):</label>
-					<input
-						type="range"
-						id="son-contribution"
-						name="son-contribution"
-						min="1000"
-						value="1000"
-						max="30000"
-						step="1000"
-						range-display="show-son-contribution"
-					/>
+					<input type="range" id="son-contribution" name="son-contribution" min="1000" value="1000" max="30000" step="1000" range-display="show-son-contribution">
 					<code>$<span id="show-son-contribution"></span></code>
 				</p>
 				<p>
 					<label for="son-delay">Son's Delay in Investment (Years):</label>
-					<input
-						type="range"
-						id="son-delay"
-						name="son-delay"
-						min="0"
-						value="1"
-						max="39"
-						step="1"
-						range-display="show-son-delay"
-					/>
+					<input type="range" id="son-delay" name="son-delay" min="0" value="1" max="39" step="1" range-display="show-son-delay">
 					<code><span id="show-son-delay"></span> Years</code>
 				</p>
 				<p>
 					<label for="behindhand-son-growth-rate">Growth Rate:</label>
-					<input
-						type="range"
-						id="behindhand-son-growth-rate"
-						name="behindhand-son-growth-rate"
-						min="0.1"
-						value="12"
-						max="12"
-						step="0.1"
-						range-display="show-behindhand-son-growth-rate"
-					/>
+					<input type="range" id="behindhand-son-growth-rate" name="behindhand-son-growth-rate" min="0.1" value="12" max="12" step="0.1" range-display="show-behindhand-son-growth-rate">
 					<code><span id="show-behindhand-son-growth-rate"></span>%</code>
 				</p>
 
 			</fieldset>
 		</form>
 
-		<div id="behindhand-son-canvas" style="width: 100%, height: 50vh;"></div>
+		<div id="behindhand-son-canvas" style="width: 100%, height: 50vh"></div>
 
 		<p>This power of compound interest is the secret to the account-based Social Security alternative.
 		It's why this approach will stay effectively solvent while the existing Social Security system is
@@ -443,7 +387,7 @@
 			</fieldset>
 		</form>
 
-		<div id="value-hit-canvas" style="width: 100%; height: 50vh;"></div>
+		<div id="value-hit-canvas" style="width: 100%; height: 50vh"></div>
 
 		<p>Taking a major hit from a market downturn is clearly painful no matter when it happens, but
 		it is especially painful as you get closer to retirement: the amazing power of compound interest
@@ -489,7 +433,7 @@
 			</fieldset>
 		</form>
 
-		<div id="insured-hit-canvas" style="width: 100%; height: 50vh;"></div>
+		<div id="insured-hit-canvas" style="width: 100%; height: 50vh"></div>
 
 		<p class="lead">Well, I'll be a monkey's uncle. It never works to your advantage to carry insurance with a mere
 		55% market downturn (ie: the Great Recession). But we know that it can get worse than that. So let's take
@@ -511,7 +455,7 @@
 				</p>
 			</fieldset>
 		</form>
-		<div id="horrid-hit-canvas" style="width: 100%; height: 50vh;" ></div>
+		<div id="horrid-hit-canvas" style="width: 100%; height: 50vh"></div>
 
 		<p class="lead">Wow. Even in this worst-case-in-history example, people hit early on in their investment
 		careers are better off without the insurance that bonds provide. In fact, the bond insurance
@@ -557,12 +501,12 @@
 		<p>Let's start by looking at the breakdown of income by percentile, so we can get a sense of
 		just how much we're talking when we talk about the available income.</p>
 
-		<div id="income-percentiles-canvas" style="width: 100%; height: 50vh;" ></div>
+		<div id="income-percentiles-canvas" style="width: 100%; height: 50vh"></div>
 
 		<p>Okay, so there's our hockey stick of earnings. But how does that translate into the amount of money
 		available? That's a simple matter of math, so here's the graph.</p>
 
-		<div id="contribution-percentiles-canvas" style="width: 100%; height: 50vh;" ></div>
+		<div id="contribution-percentiles-canvas" style="width: 100%; height: 50vh"></div>
 
 		<p>It's amazing how big numbers multiply and get even bigger really fast. There are
 		<code>167,736,100</code> working Americans. That means there are <code>167,736</code> working
@@ -572,16 +516,17 @@
 
 		<p>BTW, if you're curious about proportions of contributions, here those are by quintile.</p>
 
-		<div id="contribution-quintiles-canvas" style="width: 100%; height: 50vh;" ></div>
+		<div id="contribution-quintiles-canvas" style="width: 100%; height: 50vh"></div>
 
 		<p>So, my thinking is that everyone should help everyone below them. Let's take that money
-		from the employers match and split it among the accounts of everyone in their percentile
-		or less.  If we do that, here's what the breakdown benefits looks like.</p>
+		from the employers match and split it among the accounts of everyone in a lower percentile.
+		If we do that, here's what the breakdown benefits looks like.</p>
 
-		<div id="sharedown-canvas" style="width: 100%; height: 50vh;" ></div>
+		<div id="sharedown-canvas" style="width: 100%; height: 50vh"></div>
 
 		<p>Gah! If you supplement the income of everyone who is employed, you have some actual  </p>
 
+		<!--
 		<h2 id="putting-it-together">Putting It Together</h2>
 
 		<p>After digging through all this, here is what seems to make sense to me.</p>
@@ -591,32 +536,33 @@
 		</ul>
 
 		<h2 id="this-is-your-life">This is Your Life</h2>
+		-->
 
 		<div id="datalists" hidden>
 			<datalist id="hit-year">
-				<option value="1" label="Year 1" />
-				<option value="2" label="Year 2" />
-				<option value="5" label="Year 5" />
-				<option value="10" label="Year 10" />
-				<option value="15" label="Year 15" />
-				<option value="20" label="Year 20" />
-				<option value="25" label="Year 25" />
-				<option value="30" label="Year 30" />
-				<option value="35" label="Year 35" />
-				<option value="39" label="Year 39" />
+				<option value="1" label="Year 1">
+				<option value="2" label="Year 2">
+				<option value="5" label="Year 5">
+				<option value="10" label="Year 10">
+				<option value="15" label="Year 15">
+				<option value="20" label="Year 20">
+				<option value="25" label="Year 25">
+				<option value="30" label="Year 30">
+				<option value="35" label="Year 35">
+				<option value="39" label="Year 39">
 			</datalist>
 
 			<datalist id="income-options">
-				<option value="15000" label="Federal Minimum Wage" />
-				<option value="20000" label="Bottom 25%" />
-				<option value="30000" label="$15/hr" />
-				<option value="40000" label="Median Income" />
-				<option value="50000" label="$25/hr" />
-				<option value="65000" label="Top 25%" />
-				<option value="75000" />
-				<option value="110000" label="Top 10%" />
-				<option value="150000" label="Top 5%" />
-				<option value="300000" label="Top 1%" />
+				<option value="15000" label="Federal Minimum Wage">
+				<option value="20000" label="Bottom 25%">
+				<option value="30000" label="$15/hr">
+				<option value="40000" label="Median Income">
+				<option value="50000" label="$25/hr">
+				<option value="65000" label="Top 25%">
+				<option value="75000">
+				<option value="110000" label="Top 10%">
+				<option value="150000" label="Top 5%">
+				<option value="300000" label="Top 1%">
 			</datalist>
 		</div>
 	</body>
