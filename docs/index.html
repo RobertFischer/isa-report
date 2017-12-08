@@ -9,7 +9,7 @@
 			google.charts.load('current', {'packages':['corechart']});
 		</script>
 		<title>How About Actual Social Security for a Change?</title>
-	<link href="style.Od2LamQenzLXoJ1CNmuQqtRHYXbkp5z0lB0wKPiaMnh.css" rel="stylesheet"><script type="text/javascript" src="compatibility.d41d88724e45ac687b92.js"></script><script type="text/javascript" src="app.06159b40cba4d71bef43.js"></script><script type="text/javascript" src="bootstrap.b57d179e79c8a716fe17.js"></script><script type="text/javascript" src="style.4cd186db5fb987602ee8.js"></script></head>
+	<link href="style.Od2LamQenzLXoJ1CNmuQqtRHYXbkp5z0lB0wKPiaMnh.css" rel="stylesheet"><script type="text/javascript" src="compatibility.02628995314d7d51266e.js"></script><script type="text/javascript" src="app.f8cd88a803378a5a9c15.js"></script><script type="text/javascript" src="bootstrap.2a4934b038797a1ff6a2.js"></script><script type="text/javascript" src="style.e71eafb9504671aa88ca.js"></script></head>
 	<body>
 		<h1 id="paying-attention">This All Started When I Was Barely Paying Attention</h1>
 
@@ -207,6 +207,7 @@
 						</select>
 					</p>
 				</fieldset>
+
 		</form>
 		<div id="retirement-chart-canvas" style="width: 100%; height: 50vh"></div>
 
@@ -561,7 +562,7 @@
 
 		<p class="lead">After digging through all this, here is what seems to make sense.</p>
 
-		<h3>Contributing</h3>
+		<h3 id="contributing">Contributing</h3>
 
 		<p>First, we need to get money out of the existing social security system and into our
 		investment-based system.</p>
@@ -582,7 +583,7 @@
 
 		<p>Now that we have money on hand, we can invest it.</p>
 
-		<h3>Investing</h3>
+		<h3 id="investing">Investing</h3>
 
 		<p>How do we invest this money?  On the one hand, this account is our society's baseline account, and
 		we don't want to mess with it much. On the other hand, we saw above that time provides its own insurance
@@ -596,36 +597,186 @@
 				can invest the last 20% in whatever security you want; if your account is with the SSA, they will
 				put it in the highest-yield T-Bills that are available. Folks with this little in their account
 				just aren't in a place to be playing the investing game, and we don't want the government to be
-				in the business of doing wealth management: the private sector does that just fine, so let's let it.
+				in the business of doing wealth management: the private sector does wealth management just fine,
+				so let's let the private sector handle it.
 			</li>
-			<li>Once you clear that threshold and move your money into some other financial institution, you are
+			<li>Once you clear that threshold and move your money into some private financial institution, you are
 				clear to invest more freely as long as you are not withdrawing. The only requirement is that you must
 				maintain 2% of your account with one-year liquidity, and 3% with two-year liquidity, and 5% with
 				10-year liquidity: we'll get into why later on. (For the record, "2% of your account with
-				one-year liquidity" means that if the gov't shows up and demands 2% of the value of my account
-				in cash no later than one year from today, I need to be able to provide that cash out of the
-				account by that deadline.)
+				one-year liquidity" means that if the gov't shows up and demands 2% of the value of your account
+				in cash no later than one year from today, you need to be able to provide that cash by that
+				deadline.)
 			</li>
-			<li>If your account loses value and falls under the $100k threshold in value, you have one quarter
-				to get it back up above $100k in value or convert it to the required 80% in bonds. Failure to
-				comply will have your account reclaimed by the SSA and you forfeit the ability to transfer it
-				back out for a decade.</li>
-			<li>Your account must be diversified: no more than 25% of the account can be in any single financial
-				product, with the exception of T-Bonds.</li>
+			<li>If your account loses value and falls under the $100k threshold in value, you have one year
+				to get it back up above $100k in value or convert it to the required 80% in bonds.
+			</li>
+			<li>Your account must be diversified: no more than 5% of the account can be in any single
+				stock, future, or corporate bond, and no more than 20% of the account can be in any single
+				financial product. This includes T-Notes and T-Bills, so you have to diversify based on term
+				even if you invest entirely with the US Treasury.</li>
 		</ul>
 
-		<h3>Sharing</h3>
+		<h3 id="sharing">Sharing</h3>
 
-		<h3>Withdrawing</h3>
+		<p class="lead">Social Security is there in part so that we can have a baseline level of wealth in
+		our society.  We want to make sure those who are disabled or destitute have a financial platform
+		from which they can continue to thrive, while continuing to reward the drive to industry that
+		characterizes the American spirit and makes America such an incredible economic and cultural
+		powerhouse.</p>
 
-		<h3>Investing While Withdrawing</h3>
+		<p>To that end, there are two kinds of sharing: <strong>Social Sharing</strong> and
+		<strong>Familial Sharing</strong>. The purpose of Social Sharing is to ensure that baseline
+		level of prosperity throughout our society. The purpose of Familial Sharing is to ensure that all
+		members of a family unit benefit from the family's collective labor, and to help realize the
+		American dream of giving our children a better life than we had.</p>
+
+		<p>There's an important concept that we introduce when it comes to sharing: the
+		<strong>Contribution Percentile</strong>. Your contribution percentile is the sum of your
+		mandatory contributions into your Individual Security Account, multiplied by some
+		coefficient (representing the conversion of your income into a "household income" number,
+		along with some a need for social support as necessary), and then calcuated as a percentile
+		within the US population. The modifiers are given below.</p>
+
+		<div class="container">
+			<dl class="row">
+				<dt class="col-sm-8 col-md-7 col-lg-6 col-xl-5 text-sm-right">Contribution Percentile Coefficient</dt>
+				<dd class="col-sm-4 col-md-5 col-lg-6 col-xl-7">
+					<dl class="row">
+						<dt class="col-sm-11 text-xs-left text-sm-right">Married, Filing Jointly</dt>
+						<dd class="col-sm-1 text-xs-right text-sm-left">1</dd>
+
+						<dt class="col-sm-11 text-xs-left text-sm-right">Married, Filing Seperately, No Dependents</dt>
+						<dd class="col-sm-1 text-xs-right text-sm-left">2.5</dd>
+
+						<dt class="col-sm-11 text-xs-left text-sm-right">Married, Filing Seperately, With Dependents</dt>
+						<dd class="col-sm-1 text-xs-right text-sm-left">2</dd>
+
+						<dt class="col-sm-11 text-xs-left text-sm-right">Single, No Dependents</dt>
+						<dd class="col-sm-1 text-xs-right text-sm-left">1.5</dd>
+
+						<dt class="col-sm-11 text-xs-left text-sm-right">Single, Dependents</dt>
+						<dd class="col-sm-1 text-xs-right text-sm-left">1</dd>
+					</dl>
+				</dd>
+
+				<dt class="col-sm-4 col-md-3 col-xl-2">Social Sharing</dt>
+				<dd class="col-sm-8 col-md-9 col-xl-10">
+					<ul>
+						<li>Funded by the employer match for the employee contribution.</li>
+						<li>Collected and pooled by the SSA and paid out on January 1st of the
+							following full calendar year after collection, so money collected in 2018
+							would be paid back out on January 1st, 2020.</li>
+						<li>The first $35k paid by employers on an employee's behalf goes back into
+							that employee's Individual Security Account. This $35k amount is calculated
+							as the lifetime amount conributed by employers on an employee's behalf. The
+							goal is to support low-income folks and jumpstart compound interest for
+							everyone.</li>
+						<li>Any additional money beyond the $35k threshold is pooled by the SSA by
+							the contributor's Contribution Percentile. It is split evenly among every
+							Individual Savings Account whose Contribution Percentile is less than the
+							contributor's Contribution Percentile.
+						</li>
+					</ul>
+				</dd>
+
+				<dt class="col-sm-4 col-md-3 col-xl-2">Familial Sharing</dt>
+				<dd class="col-sm-8 col-md-9 col-xl-10">
+					<ul>
+						<li>Funded by a tax paid into the SSA equivalent to 1% of the value of the account
+							at the end of the calendar year.</li>
+						<li>Only paid by people who contributed to their account during that calendar
+							year.</li>
+						<li>Collected by the SSA and paid out on January 1st of the following
+							full calendar year after collection, so money collected in 2018 would be based
+							on the value at the end of 2017, and would be paid on January 1st, 2020.</li>
+						<li>The money collected from a contributor is split evenly among the contributor's
+							spouse, dependents, biological children, and adoptive children. These relationships
+							are calculated as of the same time the valuation of the account was done for the
+							tax calculation.</li>
+					</ul>
+				</dd>
+
+			</dl>
+		</div>
+
+		<p>That familial sharing may seem a bit odd, but it has two purposes.</p>
+
+		<p>The less important purpose is to stabilize the accounts between spouses, especially ensuring that
+		non-working spouses are getting some pittance into their own accounts. We especially want to
+		support people who leave the commercial workforce to raise children. Given divorce rates, gender
+		inequality in pay, and the like, this minor levelling is necessary.</p>
+
+		<p>While that is a nice side benefit, the primary purpose of familial sharing
+		to get children benefitting from compound interest starting from infancy, because time is the
+		primary value that we are capitalizing on. Just in case the power of compound interest has stopped
+		impressing you, here's another interactive chart to play with. It shows the benefits of
+		just the parent's contributions to a child's account until the child reaches retirement age.</p>
+
+		<form id="cb-calculator">
+				<fieldset>
+					<legend>Child Benefit Calculator</legend>
+					<p>
+						<label for="starting-income">Starting Income (Parent 1, Annual):</label>
+						<input type="range" id="cb-starting-income-1" name="starting-income" min="0" max="300000" value="40000" step="5000" list="income-options" range-display="cb-show-starting-income-1">
+						<code>$<span id="cb-show-starting-income-1"></span></code>
+					</p>
+					<p>
+						<label for="starting-income">Starting Income (Parent 2, Annual):</label>
+						<input type="range" id="cb-starting-income-2" name="starting-income" min="0" max="300000" value="40000" step="5000" list="income-options" range-display="cb-show-starting-income-2">
+						<code>$<span id="cb-show-starting-income-2"></span></code>
+					</p>
+
+					<p>
+						<label for="annual-raise">Raise (Annual):</label>
+						<select id="cb-annual-raise" name="annual-raise">
+							<optgroup label="Fixed Amount">
+								<option value="fix0" label="No Raises"></option>
+								<option value="fix1" label="Fixed 1%"></option>
+								<option value="fix3" label="Fixed 3%"></option>
+								<option value="fix5" label="Fixed 5%"></option>
+								<option value="fix10" label="Fixed 10%"></option>
+							</optgroup>
+							<optgroup label="Experience-Based">
+								<option value="exp2" label="(Years/2)%"></option>
+								<option value="exp3" label="(Years/3)%"></option>
+								<option value="exp5" label="(Years/5)%"></option>
+								<option value="exp10" label="(Years/10)%"></option>
+							</optgroup>
+							<optgroup label="Following Economy">
+								<option value="gdpc" label="GDP per Capita"></option>
+								<option value="inf" label="Inflation"></option>
+							</optgroup>
+						</select>
+					</p>
+				</fieldset>
+		</form>
+		<div id="child-benefit-chart-canvas" style="width: 100%; height: 50vh"></div>
+
+		<p class="lead">Keep in mind the chart above assumes that the child has a sibling and
+		never contributes to their own account. The investments are also very conservative:
+		it's 30 Year T-Bills until 18, 12% return from 18 until 50, and then back to the T-Bills
+		until 65.</p>
+
+		<h3 id="withdrawing">Withdrawing</h3>
+
+		<h3 id="investing-while-withdrawing">Investing While Withdrawing</h3>
 
 		<h3 id="fiddling-details">Fiddling Details</h3>
 
-		<p>Here are some fiddling details for the wonks in the audience.</p>
+		<p>Here are some fiddling details for the financial wonks in the audience. They are in no particular order.</p>
+
+		<p class="lead">If you don't care about policy details, jump to
+		<a href="#scandalous-suggestions">the scandalous suggestions below</a>.</p>
 
 		<ul>
 			<li>The minimum amount required to invest freely is automatically inflation-adjusted each year. It just starts at $100k.</li>
+			<li>Similarly, the threshold for when we start sharing down is automatically inflation-adjusted each year. It just starts
+				at $35k.</li>
+			<li>The SSA is responsible for authorizing private institutions to manage accounts.  Failure for an individual to comply
+				comply will have their account reclaimed by the SSA and that individual will forfeit the ability to transfer it
+				back out. Financial institutions that continuously fail to keep their accounts compliant will lose the ability to manage
+				Individual Security Accounts accounts. </li>
 			<li>Determination of eligibility to withdraw is done by the SSA, and has to be provided to the account-holding institution
 				before any payouts can begin.</li>
 			<li>I obviously conflated T-Bills, T-Notes, and T-Bonds throughout this document, but I am actually going to blur the lines
