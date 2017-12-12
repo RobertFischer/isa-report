@@ -754,10 +754,22 @@
 		is to generate lasting, intergenerational wealth, we want to ensure that the account has money in it at the end, and it is okay
 		if a bit is left over when the account holder dies. Therefore, we set the terminal date of the account at 125 years after the
 		holder's birth. The amount you can withdraw is such that the current account balance is evenly split between now and that
-		terminal date. These withdrawls can be made weekly. Therefore, the amount you can withdraw each eligible week is:
-		<strong>(current account balance)/(125*52 - age in weeks)</strong>. At 30 years old, you're dividing your account balance
-		by a bit under 5000. At 60, you're diving your account balance by a bit more than 3000. The result is how much you can take
-		out <em>each week</em>.</p>
+		terminal date. These withdrawls can be made weekly. You have two options for how to calculate the amount you can
+		withdraw each week.</p>
+
+		<dl>
+			<dt>(current account balance)/(125*52 - age in weeks)</dt>
+			<dd>This is ensuring that you can make even payments between now and the terminal date.
+				At 30 years old, you're dividing your account balance by a bit under 5000.
+				At 60, you're diving your account balance by a bit more than 3000.
+				The result is how much you can take out <em>each week</em>.</dd>
+
+			<dt>(current account balance) * (0.01/52)</dt>
+			<dd>Pretty much whatever investment you have for your account is going to return more than 1% a year.
+				Therefore, it's safe to withdraw 1/52nd of 1% of the account each week, and your account will still
+				grow overall, so you should be able to take these payments indefintely.</dd>
+
+		</dl>
 
 		<p>The second way to control withdrawls is by defining eligibility criteria. These are to be managed by the financial
 		institution holding the account, which is audited for compliance by the SSA. Here are the eligibility criteria:</p>
