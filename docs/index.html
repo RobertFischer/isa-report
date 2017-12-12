@@ -636,30 +636,12 @@
 		mandatory contributions into your Individual Security Account, multiplied by some
 		coefficient (representing the conversion of your income into a "household income" number,
 		along with some a need for social support as necessary), and then calcuated as a percentile
-		within the US population. The modifiers are given below.</p>
+		within the US population. The multiplier is detailed in
+		<a href="#fiddling-details">Fiddling Details</a> below.</p>
+
+		<p>Here are the two kinds of sharing that people participate in:</p>
 
 		<div class="container">
-			<dl class="row">
-				<dt class="col-sm-8 col-md-7 col-lg-6 col-xl-5 text-sm-right">Contribution Percentile Coefficient</dt>
-				<dd class="col-sm-4 col-md-5 col-lg-6 col-xl-7">
-					<dl class="row">
-						<dt class="col-sm-11 text-xs-left text-sm-right">Married, Filing Jointly</dt>
-						<dd class="col-sm-1 text-xs-right text-sm-left">1</dd>
-
-						<dt class="col-sm-11 text-xs-left text-sm-right">Married, Filing Seperately, No Dependents</dt>
-						<dd class="col-sm-1 text-xs-right text-sm-left">2.5</dd>
-
-						<dt class="col-sm-11 text-xs-left text-sm-right">Married, Filing Seperately, With Dependents</dt>
-						<dd class="col-sm-1 text-xs-right text-sm-left">2</dd>
-
-						<dt class="col-sm-11 text-xs-left text-sm-right">Single, No Dependents</dt>
-						<dd class="col-sm-1 text-xs-right text-sm-left">1.5</dd>
-
-						<dt class="col-sm-11 text-xs-left text-sm-right">Single, Dependents</dt>
-						<dd class="col-sm-1 text-xs-right text-sm-left">1</dd>
-					</dl>
-				</dd>
-
 				<dt class="col-sm-4 col-md-3 col-xl-2">Social Sharing</dt>
 				<dd class="col-sm-8 col-md-9 col-xl-10">
 					<ul>
@@ -697,7 +679,7 @@
 					</ul>
 				</dd>
 
-			</dl>
+			
 		</div>
 
 		<p>That familial sharing may seem a bit odd, but it has two purposes.</p>
@@ -707,7 +689,7 @@
 		support people who leave the commercial workforce to raise children. Given divorce rates, gender
 		inequality in pay, and the like, this minor levelling is necessary.</p>
 
-		<p>While that is a nice side benefit, the primary purpose of familial sharing
+		<p>While that is a nice side benefit, the primary purpose of familial sharing is
 		to get children benefitting from compound interest starting from infancy, because time is the
 		primary value that we are capitalizing on. Just in case the power of compound interest has stopped
 		impressing you, here's another interactive chart to play with. It shows the benefits of
@@ -753,23 +735,89 @@
 		</form>
 		<div id="child-benefit-chart-canvas" style="width: 100%; height: 50vh"></div>
 
-		<p class="lead">Keep in mind the chart above assumes that the child has a sibling and
-		never contributes to their own account. The investments are also very conservative:
-		it's 30 Year T-Bills until 18, 12% return from 18 until 50, and then back to the T-Bills
+		<p class="lead">Keep in mind the chart above assumes that the child
+		<strong>has a sibling</strong> and
+		<strong>never contributes</strong> to their own account.
+		The investments are also conservative: it's 30 Year T-Bills until 18,
+		12% return from 18 until 50, and then back to the T-Bills
 		until 65.</p>
 
 		<h3 id="withdrawing">Withdrawing</h3>
 
-		<h3 id="investing-while-withdrawing">Investing While Withdrawing</h3>
+		<p>So now we see how the money gets into the accounts. Since the money is in an individual account, we are not terribly
+		picky about how people withdraw it: we don't need the level of oversight and concern that the existing Social Security system
+		has. However, we do want to institute some rules, because we don't want a 20 year old to empty their account and then
+		end up starving at 30.</p>
+
+		<p>The first way we will control that is by setting a limit on how much can be withdrawn. Since the purpose of these accounts
+		is to generate lasting, intergenerational wealth, we want to ensure that the account has money in it at the end, and it is okay
+		if a bit is left over when the account holder dies. Therefore, we set the terminal date of the account at 125 years after the
+		holder's birth. The amount you can withdraw is such that the current account balance is evenly split between now and that
+		terminal date. These withdrawls can be made weekly. Therefore, the amount you can withdraw each eligible week is:
+		<strong>(current account balance)/(125*52 - age in weeks)</strong>. At 30 years old, you're dividing your account balance
+		by a bit under 5000, and that's how much you can take out <em>each week</em>. This is hardly </p>
+
+		<p>The second way to control withdrawls is by defining eligibility criteria. These are to be managed by the financial
+		institution holding the account, which is audited for compliance by the SSA. Here are the eligibility criteria:</p>
+
+		<ul>
+			<li>Taxable income in the previous full quarter was less than 25% the federal poverty line.</li>
+			<li>Taxable income in the preivous two full quarters was less than 50% of the previous' year taxable income.</li>
+			<li>Enrollment in a certificate or degree program in accredited vocational school,
+				professional school, college, or university, or graduation from one of these programs within the last
+				year.</li>
+			<li>One or more of the following within the six months: wedding, divorce, declaration of
+				bankruptcy, purchase or sale of a primary residence.</li>
+			<li>Death of a dependent, spouse, child, or parent within the last three months.</li>
+			<li>Birth or adoption of a child within the last three years.</li>
+			<li>Change of residence of more than 100 miles within the last three months.</li>
+		</ul>
+
+		<p>So these handle cases of disabled individuals who cannot work, people who are (or should be) out of the
+		workforce for some reason or another, or the classic moments of life hardship. These criteria aren't too
+		hard to meet, but you have to prove they occurred and provide auditable evidence of that to the institution
+		that holds the account. That slight hurdle is the extent of the discouragement: otherwise, it's up to you
+		to be reasonable with when you withdraw from your account, keeping in mind that the only person you're hurting
+		is your own retirement.</p>
+
+		<p>Also, since we do not want a market downturn to hurt those who are already suffering, we need to institute a
+		rule: while you are withdrawing from your account and for one year afterwards, new investments and re-investments
+		must be made into T-Bills. This includes maturing bonds, dividends, and sharedown contributions. All that goes
+		into T-Bills. It is hurting the long-term profitability of your account, but someone in that position is too
+		financially fragile to be able to weather ups and downs. If you don't like that, don't withdraw. If you have
+		to withdraw, then you're one of those fragile people.
+
+		</p><h4 id="universal-base-income">Can I Just Decide Not Work and Live Off the Balance in My Account?</h4>
+
+		<p>Sure. If you have enough money in your account to live a reasonable lifestyle, then go for it.</p>
+
+		<p>Create some art, start a business, make a living crafting, take some time to garden or
+		raise your kids. Enjoy.</p>
+
+		<h4>Wait, Did You Just Sneak Universal Basic Income into Social Security Privatization?</h4>
+
+		<p>Ssssh. Don't tell anyone!</p>
+
+		<p>(I mean, not really, but it's about 90% of Universal Basic Income without putting any burden on
+		the state to fund it, so close enough.</p>
 
 		<h3 id="fiddling-details">Fiddling Details</h3>
 
 		<p>Here are some fiddling details for the financial wonks in the audience. They are in no particular order.</p>
 
+		<!--
 		<p class="lead">If you don't care about policy details, jump to
 		<a href="#scandalous-suggestions">the scandalous suggestions below</a>.</p>
+		-->
 
 		<ul>
+			<li>Once you are eligible to make a withdrawl of a certain amount, you can withdraw that amount at any point in the future.
+				Eligibility is not a "use it or lose it" benefit, and therefore there is also value in being retroactively eligible or
+				"storing up" eligibility for later on.</li>
+			<li>Eligibility does not "stack": you can't make larger, multiple, or additional withdrawls if you satisfy multiple
+				eligibility criteria.</li>
+			<li>When someone dies, the assets in their account may be transfered into beneficiaries' accounts as directed by will or
+				probate. If the account escheats to the estate, it is escheated into the sharedown pool at the 100th percentile.</li>
 			<li>The minimum amount required to invest freely is automatically inflation-adjusted each year. It just starts at $100k.</li>
 			<li>Similarly, the threshold for when we start sharing down is automatically inflation-adjusted each year. It just starts
 				at $35k.</li>
@@ -777,8 +825,6 @@
 				comply will have their account reclaimed by the SSA and that individual will forfeit the ability to transfer it
 				back out. Financial institutions that continuously fail to keep their accounts compliant will lose the ability to manage
 				Individual Security Accounts accounts. </li>
-			<li>Determination of eligibility to withdraw is done by the SSA, and has to be provided to the account-holding institution
-				before any payouts can begin.</li>
 			<li>I obviously conflated T-Bills, T-Notes, and T-Bonds throughout this document, but I am actually going to blur the lines
 				farther. When I say that the account is invested in T-Bonds, I really meant that the account is investing in a pool with
 				yields no less than T-Bonds with no more risk than T-Bond offerings. This means that a bank (or the Social Security
@@ -791,11 +837,24 @@
 				SSA somewhere between one year and fifteen months of interest to offset operational costs.</li>
 			<li>Operational costs for the SSA are paid out of the general fund, but are offset by the money generated by the SSA
 				investment pool and sharedown pool.</li>
+			<li>The goal with the modifiers is to make the income reported on a tax form into a "household income",
+				with a slight nudge in support of those who need some more social support: namely, those with dependents.
+				The baseline is a couple who is <strong>Married, Filing Jointly, with Dependents</strong>, whose income
+				is multiplied by <strong>1 (ie: not adjusted)</strong>. Single parents or caretakers,
+				denoted as those who are <strong>Unmarried with Dependents</strong>, also have a <strong>1</strong>
+				multiplier, which gives them a significant advantage in the sharedown they get. Those who are
+				<strong>Unmarried without Dependents</strong> or <strong>Married, Filing Separately, with Dependents</strong>
+				have their income multiplied by <strong>2</strong>, in order to bring their benefits into alignment with
+				a "household income". Finally, you have those who are <strong>Married, Filing Separetly, without
+				Dependents</strong>. We want to discourage this category&mdash;it suspiciously looks like a tax
+				dodge&mdash;and given that they have no dependents, we are less concerned about providing social support,
+				so we multiply their income by <strong>2.5</strong>.</li>
+		
 		</ul>
 
+		<!--
 		<h3 id="scandalous-suggestions">And now, some truly scandalous suggestions</h3>
 
-		<!--
 		<h2 id="this-is-your-life">This is Your Life</h2>
 		-->
 
