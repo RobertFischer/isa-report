@@ -69,7 +69,7 @@
 		<a href="https://www.ssa.gov/oact/progdata/taxRates.html">the Social Security Administration has historical rates</a>.
 		The short answer is that since 1990, 6.2% of your paycheck is taxed for social security. We'll start our calculation from
 		1990 simplicity's sake. Given that number and some ballpark values about income history, here's how much you've contributed,
-		and how much your social security contributions would be worth if you invested them in 30-Year T-Bills (the safest investment
+		and how much your social security contributions would be worth if you invested them in 30-Year T-Bonds (the safest investment
 		possible&mdash;basically, how much the money is worth to the government), high-yield bonds (a riskier but more profitable
 		investment), and <a href="https://www.daveramsey.com/blog/the-12-reality">the 12% return rule</a>.</p>
 
@@ -173,7 +173,7 @@
 		investments and our pattern of raises, and see what kind of retirement that implies for us. We'll figure
 		that we work for 40 years and drop all our social security contributions into 12% Rule investments. Then
 		we will retire for 60 years without making another penny. Since we don't want a stock exchange collapse or
-		a recession to ruin our retirmeent, we'll move all our investments into Treasury Bills (T-Bills): T-Bills
+		a recession to ruin our retirmeent, we'll move all our investments into Treasury Bonds (T-Bonds): T-Bonds
 		are both safer and have a slightly better return on investment than storing the cash under our bed.
 		During our retirement, we'll take half our interest and cash it out, and we'll save the other half, and
 		we'll withdraw our principal evenly. This is all extremely conservative. How does
@@ -227,6 +227,7 @@
 						</select>
 					</p>
 				</fieldset>
+
 		</form>
 		<div id="retirement-chart-canvas" style="width: 100%; height: 50vh;"></div>
 
@@ -298,7 +299,7 @@
 		ensure that you are capable of retiring, and to do so without becoming destitute. So any kind of
 		Social Security account would need to have a lot more constraints on it than a voluntary retirement
 		account. We saw this in our scenario in the conservative behavior: withdrawing only a small amount
-		of our principal at a time, reinvesting half our interest, and putting our money into T-Bills.
+		of our principal at a time, reinvesting half our interest, and putting our money into T-Bonds.
 		Without those kind of regulations being in place, an individual account is not serving one of the
 		key purposes that Social Security is there to serve.</p>
 
@@ -451,17 +452,17 @@
 		mutual funds&mdash;especially those that emphasize "preservation of principal"&mdash;already
 		understand how to protect against market downturns, and they do so by using government bonds
 		(and other low-risk bonds) as a hedge. We actually already used this approach (in an extreme way)
-		in our retirement calculator: we shifted all our investments into Treasury Bills at retirement.
+		in our retirement calculator: we shifted all our investments into Treasury Bonds at retirement.
 		A Treasury Bill (aka: T-Bill) is basically a contract with the US Treasury where you give them
 		your money for a certain number of years, and they give you a percentage return on that interest.</p>
 
-		<p>It would take the effective collapse of the US government for T-Bills to lose
+		<p>It would take the effective collapse of the US government for T-Bonds to lose
 		their value, so they are the ultimate insurance policy for US investors. They are also the lowest
 		possible risk investment, and therefore the lowest possible return investment. Although you do
-		make some interest off T-Bills, you are missing out on the potential of making a lot more.
+		make some interest off T-Bonds, you are missing out on the potential of making a lot more.
 		But if the purpose of Social Security is to ensure that people are able to retire and not be
-		destitute, then T-Bills are exactly a product we can use to get there, and the accounts should
-		be required to carry an appropriate amount of T-Bills as investments to mitigate risk, even if
+		destitute, then T-Bonds are exactly a product we can use to get there, and the accounts should
+		be required to carry an appropriate amount of T-Bonds as investments to mitigate risk, even if
 		that limits our returns. That's the cost of security.</p>
 
 		<p class="lead">The conventional wisdom is that you should have some multiple of your age in bonds, with that
@@ -471,7 +472,7 @@
 		downturns.</p>
 
 		<p>To see this balancing act in action, let's take a look at Alice and Bob again, but this time
-		assuming they start work at 20 years old, retire at 60 years old, carry T-Bills equal to their
+		assuming they start work at 20 years old, retire at 60 years old, carry T-Bonds equal to their
 		age in percent. Since they hit their market downturns at different ages, the impact of this
 		insurance will be be markedly different on their account balance.</p>
 
@@ -532,7 +533,7 @@
 
 		<p>It's important to remember that some people have zero time to wait: those who
 		are in retirement cannot afford a 55% or 82% loss on their principal, because they
-		are living off of it. So T-Bills are the perfect investment vehicle for those folks,
+		are living off of it. So T-Bonds are the perfect investment vehicle for those folks,
 		because preservation of principal&mdash;that is, not losing any money&mdash;is the
 		most important thing.</p>
 
@@ -575,22 +576,381 @@
 		<div id="contribution-quintiles-canvas" style="width: 100%; height: 50vh;" ></div>
 
 		<p>So, my thinking is that everyone should help everyone below them. Let's take that money
-		from the employers match and split it among the accounts of everyone in their percentile
-		or less.  If we do that, here's what the breakdown benefits looks like.</p>
+		from the employers match and split it among the accounts of everyone in a lower percentile.
+		If we do that, here's what the breakdown benefits looks like.</p>
 
 		<div id="sharedown-canvas" style="width: 100%; height: 50vh;" ></div>
 
-		<p>Gah! If you supplement the income of everyone who is employed, you have some actual  </p>
+		<p>Yikes. That doesn't look like much. Let's consider the case of someone who makes
+		literally no money.  This would be a stay-at-home parent or extremely disabled individual,
+		for instance, so it's an important group to consider. Their account only gets $1900/year.
+		What does that look like in terms of saving for retirement?</p>
+
+		<div id="sharedown-nowork-canvas" style="width: 100%; height: 50vh;" ></div>
+
+		<p class="lead">Folks who never work a day in their life (for whatever reason) retire
+		at over $40k a year.  Not too shabby, and definitely better than the existing social
+		security system. All of this is based on only $1900/year contributed over 40
+		years&mdash;if you're not getting the point yet, compound interest truly is amazing.
+		More importantly, this could be our new absolute basement for lifestyle in
+		retirement in the United States. If you survive to retirement age, even without
+		making a dime, you "retire" to a comfortable life and even have a little disposable
+		income.</p>
+
+		<p>We have one last group to consider, and that is the severely disabled. The existing
+		social security system provides support for those who have disabilities severe enough to
+		completely prevent them from working.  For these folks, however, a contribution of
+		$1900/year isn't going to keep them alive, much less provide for their long-term
+		security. We will return to these individuals and how we can financially provide
+		for them once we get a bit farther down the road. But we need to keep them in
+		mind.</p>
 
 		<h2 id="putting-it-together">Putting It Together</h2>
 
-		<p>After digging through all this, here is what seems to make sense to me.</p>
+		<p>We have all the pieces that we need to put together a sane alternative to our existing
+		Social Security system. But, before we do, let's revisit the question: Why do we bother?
+		I mean, the existing social security system is astoundingly bad at managing our money, but
+		bureaucratic incompetence isn't the main reason it needs to be replaced. <strong>Financial
+		security in our society is found in wealth: money in the bank that generates interest is
+		true financial security, while an entitlement payout keeps people destitute, demoralized, and
+		dependent.</strong> We want a society where people are financially fit, and we clearly need
+		a universal mandate for some baseline savings in order to get there.</p>
+
+		<p class="lead">After digging through all this, here is what seems to make sense.</p>
+
+		<h3 id="contributing">Contributing</h3>
+
+		<p>First, we need to get money out of the existing social security system and into our
+		investment-based system.</p>
 
 		<ul>
-			<li>We replace social security contributions.</li>
+			<li>Each individual gets an Individual Security Account within the SSA. The accounts may
+				be transferred from the IRS into banks, at which point they have reporting and management
+				requirements akin to Health Savings Accounts.</li>
+			<li>We replace social security payroll contributions (payroll FICA tax) with mandatory
+				contributions into the worker's Individual Security Account.</li>
+			<li>The first $35k paid from of the employer portion of the was-FICA tax now goes into the
+				worker's Individual Security Account. This helps get the compounding of interest off to
+				a good start, and more than compensates for the loss of the current social security system
+				payouts.</li>
+			<li>The remaining money from the employer portion of the was-FICA tax now goes into a new
+				system, which we'll call the Sharedown System, and which we will get to in a minute.</li>
 		</ul>
 
+		<p>Now that we have money on hand, we can invest it.</p>
+
+		<h3 id="investing">Investing</h3>
+
+		<p>How do we invest this money?  On the one hand, this account is our society's baseline account, and
+		we don't want to mess with it much. On the other hand, we saw above that time provides its own insurance
+		policy against risk. It's also important to notice that we also want to keep things simple and
+		straightforward to minimize the opportunities for corruption or abuse, as well as minimizing the amount
+		of work the government has to do. Here's how to balance that out.</p>
+
+		<ul>
+			<li>If you have less than $100k in your account or your account is with the SSA, it must be invested
+				with 10% in T-Bills (short-term), 30% in T-Notes (medium-term), and 40% in T-Bills (long-term). You
+				can invest the last 20% in whatever security you want; if your account is with the SSA, they will
+				put it in the highest-yield T-Bills that are available. Folks with this little in their account
+				just aren't in a place to be playing the investing game, and we don't want the government to be
+				in the business of doing wealth management: the private sector does wealth management just fine,
+				so let's let the private sector handle it.
+			</li>
+			<li>Once you clear that threshold and move your money into some private financial institution, you are
+				clear to invest more freely as long as you are not withdrawing. The only requirement is that you must
+				maintain 2% of your account with one-year liquidity, and 3% with two-year liquidity, and 5% with
+				10-year liquidity: we'll get into why later on. (For the record, "2% of your account with
+				one-year liquidity" means that if the gov't shows up and demands 2% of the value of your account
+				in cash no later than one year from today, you need to be able to provide that cash by that
+				deadline.)
+			</li>
+			<li>If your account loses value and falls under the $100k threshold in value, you have one year
+				to get it back up above $100k in value or convert it to the required 80% in bonds.
+			</li>
+			<li>Your account must be diversified: no more than 5% of the account can be in any single
+				stock, future, or corporate bond, and no more than 20% of the account can be in any single
+				financial product. This includes T-Notes and T-Bills, so you have to diversify based on term
+				even if you invest entirely with the US Treasury.</li>
+		</ul>
+
+		<h3 id="sharing">Sharing</h3>
+
+		<p class="lead">Social Security is there in part so that we can have a baseline level of wealth in
+		our society.  We want to make sure those who are disabled or destitute have a financial platform
+		from which they can continue to thrive, while continuing to reward the drive to industry that
+		characterizes the American spirit and makes America such an incredible economic and cultural
+		powerhouse.</p>
+
+		<p>To that end, there are two kinds of sharing: <strong>Social Sharing</strong> and
+		<strong>Familial Sharing</strong>. The purpose of Social Sharing is to ensure that baseline
+		level of prosperity throughout our society. The purpose of Familial Sharing is to ensure that all
+		members of a family unit benefit from the family's collective labor, and to help realize the
+		American dream of giving our children a better life than we had.</p>
+
+		<p>There's an important concept that we introduce when it comes to sharing: the
+		<strong>Contribution Percentile</strong>. Your contribution percentile is the sum of your
+		mandatory contributions into your Individual Security Account, multiplied by some
+		coefficient (representing the conversion of your income into a "household income" number,
+		along with some a need for social support as necessary), and then calcuated as a percentile
+		within the US population. The multiplier is detailed in
+		<a href="#fiddling-details">Fiddling Details</a> below.</p>
+
+		<p>Here are the two kinds of sharing that people participate in:</p>
+
+		<div class="container">
+			<dl>
+				<dt>Social Sharing</dt>
+				<dd>
+					<ul>
+						<li>Funded by the employer match for the employee contribution.</li>
+						<li>Collected and pooled by the SSA and paid out on January 1st of the
+							following full calendar year after collection, so money collected in 2018
+							would be paid back out on January 1st, 2020.</li>
+						<li>The first $35k paid by employers on an employee's behalf goes back into
+							that employee's Individual Security Account. This $35k amount is calculated
+							as the lifetime amount conributed by employers on an employee's behalf. The
+							goal is to support low-income folks and jumpstart compound interest for
+							everyone.</li>
+						<li>Any additional money beyond the $35k threshold is pooled by the SSA by
+							the contributor's Contribution Percentile. It is split evenly among every
+							Individual Savings Account whose Contribution Percentile is less than the
+							contributor's Contribution Percentile.
+						</li>
+					</ul>
+				</dd>
+
+				<dt>Familial Sharing</dt>
+				<dd>
+					<ul>
+						<li>Funded by a tax paid into the SSA equivalent to 1% of the value of the account
+							at the end of the calendar year.</li>
+						<li>Only paid by people who contributed to their account during that calendar
+							year.</li>
+						<li>Collected by the SSA and paid out on January 1st of the following
+							full calendar year after collection, so money collected in 2018 would be based
+							on the value at the end of 2017, and would be paid on January 1st, 2020.</li>
+						<li>The money collected from a contributor is split evenly among the contributor's
+							spouse, dependents, biological children, and adoptive children. These relationships
+							are calculated as of the same time the valuation of the account was done for the
+							tax calculation.</li>
+					</ul>
+				</dd>
+
+			</dl>
+		</div>
+
+		<p>That familial sharing may seem a bit odd, but it has two purposes.</p>
+
+		<p>The less important purpose is to stabilize the accounts between spouses, especially ensuring that
+		non-working spouses are getting some pittance into their own accounts. We especially want to
+		support people who leave the commercial workforce to raise children. Given divorce rates, gender
+		inequality in pay, and the like, this minor levelling is necessary.</p>
+
+		<p>While that is a nice side benefit, the primary purpose of familial sharing is
+		to get children benefitting from compound interest starting from infancy, because time is the
+		primary value that we are capitalizing on. Just in case the power of compound interest has stopped
+		impressing you, here's another interactive chart to play with. It shows the benefits of
+		just the parent's contributions to a child's account until the child reaches retirement age.</p>
+
+		<form id="cb-calculator">
+				<fieldset>
+					<legend>Child Benefit Calculator</legend>
+					<p>
+						<label for="starting-income">Starting Income (Parent 1, Annual):</label>
+						<input
+							type="range"
+							id="cb-starting-income-1"
+							name="starting-income"
+							min="0"
+							max="300000"
+							value="40000"
+							step="5000"
+							list="income-options"
+							range-display="cb-show-starting-income-1"
+						/>
+						<code>$<span id="cb-show-starting-income-1"></span></code>
+					</p>
+					<p>
+						<label for="starting-income">Starting Income (Parent 2, Annual):</label>
+						<input
+							type="range"
+							id="cb-starting-income-2"
+							name="starting-income"
+							min="0"
+							max="300000"
+							value="40000"
+							step="5000"
+							list="income-options"
+							range-display="cb-show-starting-income-2"
+						/>
+						<code>$<span id="cb-show-starting-income-2"></span></code>
+					</p>
+
+					<p>
+						<label for="annual-raise">Raise (Annual):</label>
+						<select id="cb-annual-raise" name="annual-raise">
+							<optgroup label="Fixed Amount">
+								<option value="fix0" label="No Raises"></option>
+								<option value="fix1" label="Fixed 1%"></option>
+								<option value="fix3" label="Fixed 3%"></option>
+								<option value="fix5" label="Fixed 5%"></option>
+								<option value="fix10" label="Fixed 10%"></option>
+							</optgroup>
+							<optgroup label="Experience-Based">
+								<option value="exp2" label="(Years/2)%"></option>
+								<option value="exp3" label="(Years/3)%"></option>
+								<option value="exp5" label="(Years/5)%"></option>
+								<option value="exp10" label="(Years/10)%"></option>
+							</optgroup>
+							<optgroup label="Following Economy">
+								<option value="gdpc" label="GDP per Capita"></option>
+								<option value="inf" label="Inflation"></option>
+							</optgroup>
+						</select>
+					</p>
+				</fieldset>
+		</form>
+		<div id="child-benefit-chart-canvas" style="width: 100%; height: 50vh;"></div>
+
+		<p class="lead">Keep in mind the chart above assumes that the child
+		<strong>has a sibling</strong> and
+		<strong>never contributes</strong> to their own account.
+		This is notably also not including any sharedown.
+		The investments are also conservative: it's 30 Year T-Bills until 18,
+		12% return from 18 until 50, and then back to the T-Bills
+		until 65.</p>
+
+		<h3 id="withdrawing">Withdrawing</h3>
+
+		<p>So now we see how the money gets into the accounts. Since the money is in an individual account, we are not terribly
+		picky about how people withdraw it: we don't need the level of oversight and concern that the existing Social Security system
+		has. However, we do want to institute some rules, because we don't want a 20 year old to empty their account and then
+		end up starving at 30.</p>
+
+		<p>The first way we will control that is by setting a limit on how much can be withdrawn. Since the purpose of these accounts
+		is to generate lasting, intergenerational wealth, we want to ensure that the account has money in it at the end, and it is okay
+		if a bit is left over when the account holder dies. Therefore, we set the terminal date of the account at 125 years after the
+		holder's birth. The amount you can withdraw is such that the current account balance is evenly split between now and that
+		terminal date. These withdrawls can be made weekly. You have two options for how to calculate the amount you can
+		withdraw each week.</p>
+
+		<div class="container">
+			<dl>
+
+				<dt>(current account balance)/(125*52 - age in weeks)</dt>
+				<dd>This is ensuring that you can make even payments between now and the terminal date.
+					At 30 years old, you're dividing your account balance by a bit under 5000.
+					At 60, you're diving your account balance by a bit more than 3000.
+					The result is how much you can take out <em>each week</em>.</dd>
+
+				<dt>(current account balance) * (0.01/52)</dt>
+				<dd>Pretty much whatever investment you have for your account is going to return more than 1% a year.
+					Therefore, it's safe to withdraw 1/52nd of 1% of the account each week, and your account will still
+					grow overall, so you should be able to take these payments indefintely.</dd>
+
+			</dl>
+		</div>
+
+		<p>The second way to control withdrawls is by defining eligibility criteria. These are to be managed by the financial
+		institution holding the account, which is audited for compliance by the SSA. Here are the eligibility criteria:</p>
+
+		<ul>
+			<li>Taxable income in the previous full quarter was less than 25% the federal poverty line.</li>
+			<li>Taxable income in the preivous two full quarters was less than 50% of the previous' year taxable income.</li>
+			<li>Enrollment in a certificate or degree program in accredited vocational school,
+				professional school, college, or university, or graduation from one of these programs within the last
+				year.</li>
+			<li>One or more of the following within the last six months: wedding, divorce, declaration of
+				bankruptcy, purchase or sale of a primary residence.</li>
+			<li>Death of a dependent, spouse, child, or parent within the last three months.</li>
+			<li>Birth or adoption of a child within the last three years.</li>
+			<li>Change of residence of more than 100 miles within the last three months.</li>
+		</ul>
+
+		<p>So these handle cases of disabled individuals who cannot work, people who are (or should be) out of the
+		workforce for some reason or another, or the classic moments of life hardship. These criteria aren't too
+		hard to meet, but you have to prove they occurred and provide auditable evidence of that to the institution
+		that holds the account. That slight hurdle is the extent of the discouragement: otherwise, it's up to you
+		to be reasonable with when you withdraw from your account, keeping in mind that the only person you're hurting
+		is your own retirement.</p>
+
+		<p>Also, since we do not want a market downturn to hurt those who are already suffering, we need to institute a
+		rule: while you are withdrawing from your account and for one year afterwards, new investments and re-investments
+		must be made into T-Bills. This includes maturing bonds, dividends, and sharedown contributions. All that goes
+		into T-Bills. It is hurting the long-term profitability of your account, but someone in that position is too
+		financially fragile to be able to weather ups and downs. If you don't like that, don't withdraw. If you have
+		no choice but to withdraw, then you're one of those fragile people.</li>
+
+		<h4 id="universal-base-income">Can I Just Decide Not Work and Live Off the Balance in My Account?</h4>
+
+		<p>Sure. If you have enough money in your account to live a reasonable lifestyle, then go for it.</p>
+
+		<p>Create some art, start a business, make a living crafting, take some time to garden or
+		raise your kids. Enjoy.</p>
+
+		<h4>Wait, Did You Just Sneak Universal Basic Income into Social Security Privatization?</h4>
+
+		<p>Ssssh. Don't tell anyone!</p>
+
+		<p>(I mean, not really, but it's about 80% of Universal Basic Income without putting any burden on
+		the state to fund it, so close enough.)</p>
+
+		<h3 id="fiddling-details">Fiddling Details</h3>
+
+		<p>Here are some fiddling details for the financial wonks in the audience. They are in no particular order.</p>
+
+		<!--
+		<p class="lead">If you don't care about policy details, jump to
+		<a href="#scandalous-suggestions">the scandalous suggestions below</a>.</p>
+		-->
+
+		<ul>
+			<li>Once you are eligible to make a withdrawl of a certain amount, you can withdraw that amount at any point in the future.
+				Eligibility is not a "use it or lose it" benefit, and therefore there is also value in being retroactively eligible or
+				"storing up" eligibility for later on.</li>
+			<li>Eligibility does not "stack": you can't make larger, multiple, or additional withdrawls if you satisfy multiple
+				eligibility criteria.</li>
+			<li>When someone dies, the assets in their account may be transfered into beneficiaries' accounts as directed by will or
+				probate. If the account escheats to the estate, it is escheated into the sharedown pool at the 100th percentile.</li>
+			<li>The minimum amount required to invest freely is automatically inflation-adjusted each year. It just starts at $100k.</li>
+			<li>Similarly, the threshold for when we start sharing down is automatically inflation-adjusted each year. It just starts
+				at $35k.</li>
+			<li>The SSA is responsible for authorizing private institutions to manage accounts.  Failure for an individual to comply
+				comply will have their account reclaimed by the SSA and that individual will forfeit the ability to transfer it
+				back out. Financial institutions that continuously fail to keep their accounts compliant will lose the ability to manage
+				Individual Security Accounts accounts. </li>
+			<li>I obviously conflated T-Bills, T-Notes, and T-Bonds throughout this document, but I am actually going to blur the lines
+				farther. When I say that the account is invested in T-Bonds, I really meant that the account is investing in a pool with
+				yields no less than T-Bonds with no more risk than T-Bond offerings. This means that a bank (or the Social Security
+				Administration) can pool cash in order to make more advantageous bids for T-Bonds, or to buy longer term T-Bonds, as long
+				as they will have the cash on hand to pay out when the balances mature. This opens up an opportunity for profit for those
+				who are managing accounts and stabilizes the market somewhat, while still providing the stability and yield that the
+				account-holder expects.</li>
+			<li>Sharedowns are paid out at the end of the fourth quarter after they are collected. In the meantime, that money is pooled
+				and invested in T-Bills. This gives time for the SSA to settle up accounts, rectify issues, etc., and also provides the
+				SSA somewhere between one year and fifteen months of interest to offset operational costs.</li>
+			<li>Operational costs for the SSA are paid out of the general fund, but are offset by the money generated by the SSA
+				investment pool and sharedown pool.</li>
+			<li>The goal with the modifiers is to make the income reported on a tax form into a "household income",
+				with a slight nudge in support of those who need some more social support: namely, those with dependents.
+				The baseline is a couple who is <strong>Married, Filing Jointly, with Dependents</strong>, whose income
+				is multiplied by <strong>1 (ie: not adjusted)</strong>. Single parents or caretakers,
+				denoted as those who are <strong>Unmarried with Dependents</strong>, also have a <strong>1</strong>
+				multiplier, which gives them a significant advantage in the sharedown they get. Those who are
+				<strong>Unmarried without Dependents</strong> or <strong>Married, Filing Separately, with Dependents</strong>
+				have their income multiplied by <strong>2</strong>, in order to bring their benefits into alignment with
+				a "household income". Finally, you have those who are <strong>Married, Filing Separetly, without
+				Dependents</strong>. We want to discourage this category&mdash;it suspiciously looks like a tax
+				dodge&mdash;and given that they have no dependents, we are less concerned about providing social support,
+				so we multiply their income by <strong>2.5</strong>.</li>
+		</li>
+		</ul>
+
+		<!--
+		<h3 id="scandalous-suggestions">And now, some truly scandalous suggestions</h3>
+
 		<h2 id="this-is-your-life">This is Your Life</h2>
+		-->
 
 		<div id="datalists" hidden>
 			<datalist id="hit-year">

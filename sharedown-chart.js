@@ -11,8 +11,7 @@ const calculateData = () => {
 
   const data = new google.visualization.DataTable();
   data.addColumn('number', 'Percentile');
-  //data.addColumn('number', 'Sharedown (Workers Only)');
-  //data.addColumn('number', 'Total (Workers Only)');
+  data.addColumn('number', 'Contribution');
   data.addColumn('number', 'Sharedown');
   data.addColumn('number', 'Total Benefit');
 
@@ -31,18 +30,24 @@ const calculateData = () => {
 
     const perCapitaBenefit = (totalContribution + fromAbove) / spreadOver;
     const perCapitaBenefitAll = (totalContribution + fromAboveAll) / spreadOverAll;
-    data.addRow([pct/100.0
-      //, perCapitaBenefit, perCapitaContribution + perCapitaBenefit
-      , perCapitaBenefitAll, perCapitaContribution + perCapitaBenefitAll
-    ]);
 
-    _.range(pct,0,-1).forEach(lowerPct => {
-      const [over,overAll] = benefits[lowerPct] || [0,0];
-      benefits[lowerPct] =
-        [ over + totalContribution - perCapitaBenefit * countPerPct
-        , overAll + totalContribution - perCapitaBenefitAll * countPerPct
-        ];
-    });
+    if(pct <= 80) {
+      data.addRow([pct/100.0,
+        perCapitaContribution, perCapitaBenefitAll, perCapitaContribution + perCapitaBenefitAll
+      ]);
+    }
+
+    delete benefits[pct];
+
+    if(pct > 1) {
+      _.range(pct-1,0,-1).forEach(lowerPct => {
+        const [over,overAll] = benefits[lowerPct] || [0,0];
+        benefits[lowerPct] =
+          [ over + totalContribution - perCapitaBenefit * countPerPct
+          , overAll + totalContribution - perCapitaBenefitAll * countPerPct
+          ];
+      });
+    }
   });
 
   const pctFormatter = new google.visualization.NumberFormat({ pattern:'##%' })
@@ -51,6 +56,7 @@ const calculateData = () => {
   const dollarFormatter = new google.visualization.NumberFormat({ fractionDigits: 2, prefix:'$' });
   dollarFormatter.format(data,1);
   dollarFormatter.format(data,2);
+  dollarFormatter.format(data,3);
 
   return data;
 };

@@ -7,7 +7,7 @@ const csvToObj = ([rawYears,rawValues]) => {
   const maxYear = _.max(years);
   const minYear = _.min(years);
   const meanVal = _.mean(values);
-  _.range(minYear, maxYear+100).forEach(year =>
+  _.range(minYear, maxYear+200).forEach(year =>
     obj[year] = obj[year] || meanVal
   );
   return obj;
